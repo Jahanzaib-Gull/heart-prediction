@@ -168,9 +168,42 @@ st.markdown(
         margin-bottom: 10px;
     }
 
-    /* Labels */
-    label {
-        font-weight: 600 !important;
+    /* Make all form labels clearly visible on the light page */
+    .stApp [data-testid="stWidgetLabel"] p,
+    .stApp [data-testid="stWidgetLabel"] label,
+    .stApp [data-testid="stWidgetLabel"] div,
+    .stApp label,
+    .stApp .stMarkdown p {
+        color: #111827 !important;
+    }
+
+    .stApp [data-testid="stWidgetLabel"] p {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+
+    .stApp [data-testid="stWidgetLabel"] small,
+    .stApp [data-testid="stWidgetLabel"] span {
+        color: #6b7280 !important;
+    }
+
+    /* Keep sidebar text white */
+    section[data-testid="stSidebar"] .stMarkdown p,
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+        color: #f9fafb !important;
+    }
+
+    /* Input text */
+    .stApp input,
+    .stApp textarea,
+    .stApp [data-baseweb="select"] *,
+    .stApp [data-baseweb="input"] * {
+        color: #111827 !important;
+    }
+
+    .stApp [data-baseweb="select"] {
+        background-color: #ffffff !important;
     }
 
     /* Predict button */
