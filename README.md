@@ -14,7 +14,7 @@ clinical information.
 
 After deployment, add your Streamlit Cloud URL here:
 
-**Live App:** `https://your-app-name.streamlit.app`
+**Live App:** `https://heart-prediction-ahud772pmvkarevlalji8u.streamlit.app/`
 
 ## ✨ Features
 
