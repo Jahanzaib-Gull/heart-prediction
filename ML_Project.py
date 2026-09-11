@@ -194,19 +194,50 @@ st.markdown(
         color: #f9fafb !important;
     }
 
-    /* Input text */
-    .stApp input,
-    .stApp textarea,
-    .stApp [data-baseweb="select"] *,
-    .stApp [data-baseweb="input"] * {
+    /* Light, readable form controls */
+    .stApp [data-baseweb="input"],
+    .stApp [data-baseweb="select"] > div {
+        background-color: #ffffff !important;
+        border: 1px solid #d1d5db !important;
+        border-radius: 10px !important;
+    }
+
+    .stApp [data-baseweb="input"] input,
+    .stApp [data-baseweb="select"] input,
+    .stApp [data-baseweb="select"] [role="button"],
+    .stApp [data-baseweb="select"] span,
+    .stApp [data-baseweb="select"] div {
         color: #111827 !important;
     }
 
-    .stApp [data-baseweb="select"] {
+    .stApp [data-baseweb="input"] input {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+        -webkit-text-fill-color: #111827 !important;
+    }
+
+    .stApp [data-baseweb="input"] input::placeholder {
+        color: #6b7280 !important;
+        opacity: 1 !important;
+    }
+
+    /* Number input +/- controls */
+    .stApp [data-testid="stNumberInput"] button {
+        color: #111827 !important;
         background-color: #ffffff !important;
     }
 
-    /* Predict button */
+    /* Selectbox selected value */
+    .stApp [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+        color: #111827 !important;
+    }
+
+    /* Slider value and labels */
+    .stApp [data-testid="stSlider"] [data-testid="stThumbValue"] {
+        color: #ef4444 !important;
+    }
+
+        /* Predict button */
     div.stButton > button {
         width: 100%;
         border: none;
